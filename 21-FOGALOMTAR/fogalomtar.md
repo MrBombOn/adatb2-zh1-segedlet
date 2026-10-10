@@ -1,5 +1,7 @@
 # Fogalomtár (ABC)
 
+**Prioritás: P2** — P0=20 perces ZH kritikus · P1=fontos · P2=háttér
+
 | Fogalom | Röviden | Hol részletes? |
 |---------|---------|----------------|
 | ACID | Tranzakció tulajdonságok | `12-TRANZAKCIOK/acid.md` |

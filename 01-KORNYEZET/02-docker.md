@@ -1,25 +1,25 @@
-# Docker útvonal
+# Docker útvonal – Oracle 11g
+
+**Prioritás: P1**
 
 ## Előfeltétel
 
-- Docker Desktop (Windows) fut
-- Elég RAM a konténernek (Oracle image igényes)
+- Docker Desktop fut
+- Elég RAM a 11g XE image-hez
 
 ## Általános lépések (helyőrző)
 
 ```text
-docker pull <oracle-image>
-docker run --name <kontener> -p <host-port>:1521 -e <env-valtozok> <oracle-image>
+docker pull <oracle-11g-xe-image>
+docker run --name <kontener> -p <host-port>:1521 -e <env-valtozok> <oracle-11g-xe-image>
 ```
 
-> **Tanulási példa – ne másold be ZH-megoldásként.** Az image név, jelszó és port a te környezetedé.
+> **Tanulási példa – ne másold be ZH-megoldásként.** A mintákban `<helyőrző>` van; töltsd ki a feladat szerint.
 
-## Csatlakozás
+## Csatlakozás PL/SQL Developerrel
 
-Host: `localhost`, port: amit `-p`-nél megadtál, service/SID: az image dokumentációja szerint.
+Host: `localhost`, port: a `-p` mapping, service/SID: az image docs szerint (gyakran `XE`).
 
 ```sql
-SELECT banner FROM v$version;
+SELECT * FROM dual;
 ```
-
-(Jogosultságtól függően `v$version` nem mindig elérhető gyakorló usernek — `dual` elég smoke testnek.)

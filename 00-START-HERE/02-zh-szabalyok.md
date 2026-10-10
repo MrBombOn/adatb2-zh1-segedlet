@@ -13,8 +13,8 @@ A `<…>` részeket **te** cseréled a feladathoz.
 
 ## 3. Oracle, nem más dialektus
 - String összefűzés: `||` (nem `CONCAT` másképp / nem `+`)
-- Top-N: `FETCH FIRST n ROWS ONLY` vagy `ROWNUM` (nem `LIMIT`)
-- Autoincrement: általában `SEQUENCE` + trigger / `IDENTITY` (verziófüggő)
+- Top-N (**Oracle 11g**): `ROWNUM` vagy `ROW_NUMBER()` — **ne** `FETCH FIRST` / `LIMIT`
+- Egyedi ID: `SEQUENCE` (+ szükség szerint trigger) — **ne** `IDENTITY` / `AUTO_INCREMENT`
 
 ## 4. NULL fegyelem
 `WHERE col = NULL` **soha** nem az, amit akarsz. → `IS NULL`.

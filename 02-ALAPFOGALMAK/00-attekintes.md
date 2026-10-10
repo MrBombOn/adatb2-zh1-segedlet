@@ -1,5 +1,7 @@
 # Alapfogalmak – térkép
 
+**Prioritás: P0** — P0=20 perces ZH kritikus · P1=fontos · P2=háttér
+
 Olvasási sorrend javaslat:
 
 1. `database.md` → `schema.md` → `table.md` → `row-column.md`

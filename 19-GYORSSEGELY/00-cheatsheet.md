@@ -1,5 +1,7 @@
 # Gyorssegély – cheatsheet
 
+**Prioritás: P0** — P0=20 perces ZH kritikus · P1=fontos · P2=háttér
+
 > **Tanulási példa – ne másold be ZH-megoldásként.** A sablonokban `<helyőrző>` jelöli, amit a feladat szerint kell kitölteni.
 
 ## SELECT váz
@@ -35,9 +37,14 @@ SYSDATE
 COMMIT;  ROLLBACK;  SAVEPOINT <nev>;
 ```
 
-## Top-N (Oracle)
+## Top-N (Oracle 11g)
 
 ```sql
-SELECT … FETCH FIRST <n> ROWS ONLY;
--- vagy ROWNUM szűrés alkérdéssel (tananyag szerint)
+SELECT *
+FROM (
+  SELECT <oszlopok>
+  FROM   <tabla>
+  ORDER BY <kifejezes> DESC
+)
+WHERE ROWNUM <= <n>;
 ```

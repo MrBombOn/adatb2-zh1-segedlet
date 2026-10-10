@@ -1,5 +1,7 @@
 # ZH szabályok (külön fejezet)
 
+**Prioritás: P0** — P0=20 perces ZH kritikus · P1=fontos · P2=háttér
+
 Lásd még: `README.md` teteje, `00-START-HERE/02-zh-szabalyok.md`.
 
 ## Aranyszabályok

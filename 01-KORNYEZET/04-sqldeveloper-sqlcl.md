@@ -1,26 +1,7 @@
-# SQL Developer és SQLcl
+# Áthelyezve: PL/SQL Developer
 
-## SQL Developer (GUI)
+Ez a fájl korábban SQL Developer / SQLcl tartalmat hordozott.
 
-- Új kapcsolat: user, jelszó, host, port, service name / SID  
-- Worksheet: SQL futtatás  
-- Explain plan / leírás: tanuláshoz hasznos  
+**Használd helyette:** [`04-plsql-developer.md`](04-plsql-developer.md)
 
-## SQLcl / SQL*Plus (CLI)
-
-```text
-sql <user>/<password>@<host>:<port>/<service>
-```
-
-```sql
-SELECT * FROM dual;
-EXIT;
-```
-
-## Melyiket?
-
-| Szituáció | Ajánlás |
-|-----------|---------|
-| Böngészés, kattintás | SQL Developer |
-| Gyors script, ZH-szerű fegyelem | SQLcl |
-| Automatizálás | SQLcl + fájl |
+A ZH / gyakorlás kliense ebben a repóban: **PL/SQL Developer** + Oracle **11g**.

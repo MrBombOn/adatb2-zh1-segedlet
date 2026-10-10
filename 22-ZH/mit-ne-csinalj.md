@@ -1,7 +1,7 @@
 # Mit NE csinálj ZH-n
 
 1. Ne másold be a repo tanulási példáit vakon.  
-2. Ne használj `LIMIT`-et (MySQL reflex).  
+2. Ne használj `LIMIT`-et / `FETCH FIRST`-et (MySQL / 12c+ reflex) — Oracle 11g: `ROWNUM`.  
 3. Ne írj `= NULL`-t.  
 4. Ne UPDATE/DELETE WHERE nélkül.  
 5. Ne hagyd ki a GROUP BY kötelező oszlopait.  

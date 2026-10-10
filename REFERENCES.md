@@ -6,7 +6,8 @@ Ez a segédlet **saját tanulási anyag**, nem hivatalos kurzusjegyzet.
 
 - [Oracle Database SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/)
 - [Oracle Live SQL](https://livesql.oracle.com/) — böngészős gyakorlás
-- [SQL*Plus User's Guide](https://docs.oracle.com/en/database/oracle/oracle-database/)
+- Oracle Database 11g / 11g R2 SQL Language Reference (hivatalos docs)
+- PL/SQL Developer (Allround Automations) — kliens a gyakorláshoz
 
 ## Mit NEM tartalmaz ez a repo
 

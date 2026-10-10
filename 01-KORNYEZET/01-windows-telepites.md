@@ -1,24 +1,29 @@
-# Windows telepítés (vázlat)
+# Windows telepítés – Oracle 11g
 
-> Tanulási útmutató – a pontos telepítőnevek és verziók változnak. Mindig a hivatalos Oracle oldal aktuális leírását kövesd.
+**Prioritás: P0**
 
-## Tipikus komponensek
+> Tanulási útmutató – a pontos telepítőnevek változnak. Oracle **11g XE** / intézményi 11g szerver.
 
-1. Oracle Database Free / XE (vagy intézményi szerver — akkor telepítés nem kell)
-2. Oracle SQL Developer **vagy** SQLcl
-3. (Opcionális) Instant Client, ha külön kliens kell
+## Komponensek
 
-## Ellenőrzés telepítés után
+1. Oracle Database **11g XE** (vagy intézményi 11g — akkor DB telepítés nem kell)
+2. Oracle **Instant Client 64-bit**
+3. **PL/SQL Developer 64-bit** (kliens)
+
+## Ellenőrzés
 
 ```sql
 SELECT * FROM dual;
-SELECT user FROM dual;
+SELECT banner FROM v$version;  -- jogtól függhet
 ```
 
-Ha ez fut, a magod kész. A séma feltöltése: `07-gyakorlo-schema.md`.
+Séma: `07-gyakorlo-schema.md`. Jogok: `00-20-PERCES-ZH/03-SEMA-USER.md`.
 
 ## Gyakori buktató
 
-- Rossz szolgáltatásnév / port a kapcsolatban
+- 32/64-bit keverés (Instant Client ↔ PL/SQL Developer)
+- Rossz szolgáltatásnév / port
 - Listener nem fut
-- Felhasználó zárolva (`ACCOUNT LOCK`)
+- Felhasználó zárolva
+
+> **Tanulási példa – ne másold be ZH-megoldásként.** A mintákban `<helyőrző>` van; töltsd ki a feladat szerint.

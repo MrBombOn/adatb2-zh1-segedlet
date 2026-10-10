@@ -35,3 +35,5 @@ wallet/
 tnsnames.ora.local
 sqlnet.ora.local
 _generate.py
+_retake_expand.py
+_generate.py

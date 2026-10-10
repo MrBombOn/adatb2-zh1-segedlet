@@ -24,3 +24,9 @@ A zh1-ready tag a freeze commit(ek) utáni main csúcsot jelöli.
 git fetch --tags
 git checkout zh1-ready
 `
+
+## Retake bővítés
+
+A `zh1-ready` tag **változatlan**.
+Az új gyorsréteg + bővítés annotált tagje: `zh1-retake-ready`.
+
