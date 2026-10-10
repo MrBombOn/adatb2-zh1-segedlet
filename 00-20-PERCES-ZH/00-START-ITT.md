@@ -1,5 +1,7 @@
 # 20 PERCES ZH – START ITT
 
+> **Ha elakadtam – keresés:** lap alján `## KERESÉS, HA ELAKADTAM` — Oracle 11g Docs + SO bemásolható keresők.
+
 Egy képernyő. Ha csak ezt nyitod ki, tudj navigálni.
 
 ## 60 másodperces menet
@@ -101,3 +103,30 @@ Egy képernyő. Ha csak ezt nyitod ki, tudj navigálni.
 ## Következő 2 perc
 
 Nyisd: [`01-FELADATSZOVEG-FELISMERES.md`](01-FELADATSZOVEG-FELISMERES.md) → [`02-FUGGOSEGI-SORREND.md`](02-FUGGOSEGI-SORREND.md).
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g SQL SELECT JOIN CREATE TABLE syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g SQL SELECT JOIN CREATE TABLE -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference SQL SELECT JOIN CREATE TABLE
+```
+
+```text
+"Oracle 11g" SQL SELECT JOIN CREATE TABLE ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g SQL Language Reference
+```
+

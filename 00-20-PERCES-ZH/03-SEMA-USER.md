@@ -35,3 +35,30 @@ GRANT CREATE VIEW TO <user_nev>;
 | ORA-01950 | no privileges on tablespace | QUOTA |
 | ORA-01031 | insufficient privileges | GRANT megfelelő jog |
 | ORA-01017 | bad username/password | credential |
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g CREATE USER GRANT QUOTA tablespace syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g CREATE USER GRANT QUOTA tablespace -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference CREATE USER GRANT QUOTA tablespace
+```
+
+```text
+"Oracle 11g" CREATE USER GRANT QUOTA tablespace ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g CREATE USER IDENTIFIED BY
+```
+

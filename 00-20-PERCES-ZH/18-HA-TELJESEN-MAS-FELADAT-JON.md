@@ -102,3 +102,30 @@
 74. Több tábla → több ON.
 75. HAVING-ben aggregátum.
 76. WHERE-ben ne aggregátumot erőltess.
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g SQL problem solving SELECT JOIN DDL DML syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g SQL problem solving SELECT JOIN DDL DML -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference SQL problem solving SELECT JOIN DDL DML
+```
+
+```text
+"Oracle 11g" SQL problem solving SELECT JOIN DDL DML ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g SQL Language Reference contents
+```
+

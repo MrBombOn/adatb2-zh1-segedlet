@@ -32,3 +32,30 @@ DESC / lekérdezés `user_tables`-ből; próbáld az INSERT-et.
 CREATE SEQUENCE <seq_nev> START WITH 1 INCREMENT BY 1;
 -- INSERT-nél: <seq_nev>.NEXTVAL
 ```
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g CREATE TABLE SEQUENCE syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g CREATE TABLE SEQUENCE -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference CREATE TABLE SEQUENCE
+```
+
+```text
+"Oracle 11g" CREATE TABLE SEQUENCE ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g CREATE TABLE syntax VARCHAR2 NUMBER DATE
+```
+

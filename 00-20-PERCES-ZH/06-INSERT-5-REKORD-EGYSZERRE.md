@@ -26,3 +26,30 @@ MySQL-es multi-VALUES reflex; FK sértés; elírt oszlopszám.
 
 ## ELLENŐRZÉS (10 mp)
 SELECT COUNT(*) WHERE …; öt sor megvan-e?
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g INSERT ALL SELECT FROM dual syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g INSERT ALL SELECT FROM dual -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference INSERT ALL SELECT FROM dual
+```
+
+```text
+"Oracle 11g" INSERT ALL SELECT FROM dual ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:stackoverflow.com Oracle 11g "INSERT ALL" multi-table insert -mysql
+```
+

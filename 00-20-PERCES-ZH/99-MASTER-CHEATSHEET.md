@@ -217,3 +217,30 @@ SELECT constraint_name, constraint_type FROM user_constraints;
 ## Emlékeztető blokk 1
 - Placeholder minta 1: cseréld `<helyőrző>` → feladatsor név
 - Ellenőrző kérdés 1: hány sort várok? van NULL? van FK?
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g SQL Language Reference SELECT JOIN MERGE syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g SQL Language Reference SELECT JOIN MERGE -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference SQL Language Reference SELECT JOIN MERGE
+```
+
+```text
+"Oracle 11g" SQL Language Reference SELECT JOIN MERGE ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle Database 11g R2 SQL Language Reference
+```
+

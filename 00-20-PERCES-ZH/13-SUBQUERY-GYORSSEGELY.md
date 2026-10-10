@@ -24,3 +24,30 @@ Több sort adó subquery `=` mellett; korreláció elrontása.
 
 ## ELLENŐRZÉS (10 mp)
 Futtasd külön a belső SELECT-et.
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g subquery EXISTS IN correlated syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g subquery EXISTS IN correlated -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference subquery EXISTS IN correlated
+```
+
+```text
+"Oracle 11g" subquery EXISTS IN correlated ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g subquery EXISTS
+```
+

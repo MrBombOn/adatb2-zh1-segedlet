@@ -32,3 +32,30 @@ hallgató kurzusai → student JOIN enrollment JOIN course
 nincs jelentkezés → student LEFT JOIN enrollment WHERE enrollment.student_id IS NULL
 kurzusonként létszám → GROUP BY + COUNT
 ```
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g LEFT OUTER JOIN IS NULL anti-join syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g LEFT OUTER JOIN IS NULL anti-join -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference LEFT OUTER JOIN IS NULL anti-join
+```
+
+```text
+"Oracle 11g" LEFT OUTER JOIN IS NULL anti-join ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g outer joins
+```
+

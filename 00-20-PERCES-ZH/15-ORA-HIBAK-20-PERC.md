@@ -18,3 +18,30 @@
 | ORA-01489 | result of string concat is too long | LISTAGG |
 
 **Módszer:** kód → sorpozíció → egyszerűsítsd a SQL-t.
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g ORA-00942 ORA-02291 ORA-00979 syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g ORA-00942 ORA-02291 ORA-00979 -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference ORA-00942 ORA-02291 ORA-00979
+```
+
+```text
+"Oracle 11g" ORA-00942 ORA-02291 ORA-00979 ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g ORA-00942
+```
+

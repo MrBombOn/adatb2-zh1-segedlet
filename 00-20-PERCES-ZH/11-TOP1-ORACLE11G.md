@@ -32,3 +32,30 @@ WHERE rn = 1;
 
 ## Tipikus hiba
 `WHERE ROWNUM = 1` **ORDER BY előtt** ugyanazon a szinten → rossz „legjobb” sor.
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g ROWNUM top N ORDER BY subquery syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g ROWNUM top N ORDER BY subquery -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference ROWNUM top N ORDER BY subquery
+```
+
+```text
+"Oracle 11g" ROWNUM top N ORDER BY subquery ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g ROWNUM
+```
+

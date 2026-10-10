@@ -38,6 +38,11 @@ Ha kevés az időd / pótzárthelyi / gyors ismétlés:
 | 18 | [Ha teljesen más feladat](00-20-PERCES-ZH/18-HA-TELJESEN-MAS-FELADAT-JON.md) | Döntési fa |
 | 99 | [Master cheatsheet](00-20-PERCES-ZH/99-MASTER-CHEATSHEET.md) | Minden minta egyben |
 
+
+### Ha elakadtam – keresés
+
+Minden `00-20-PERCES-ZH/` lap végén: **KERESÉS, HA ELAKADTAM** — Oracle 11g Docs + Stack Overflow bemásolható keresők. Kezdd itt: [`00-START-ITT.md`](00-20-PERCES-ZH/00-START-ITT.md).
+
 Korábbi mintafelismerés: [`23-KORABBI-ZH-MINTAK/`](23-KORABBI-ZH-MINTAK/)  
 Próba-ZH: [`20-GYAKORLAS/PROBA-ZH/`](20-GYAKORLAS/PROBA-ZH/)
 

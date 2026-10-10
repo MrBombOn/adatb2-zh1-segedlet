@@ -28,3 +28,30 @@ FROM   <forras>;
 
 ## Tipikus hiba
 Rossz TO_DATE maszk; FIRST/ALL keverése; forrás SELECT hiánya a végén.
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g INSERT FIRST INSERT ALL conditional multitable syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g INSERT FIRST INSERT ALL conditional multitable -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference INSERT FIRST INSERT ALL conditional multitable
+```
+
+```text
+"Oracle 11g" INSERT FIRST INSERT ALL conditional multitable ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
+```text
+site:docs.oracle.com Oracle 11g multitable insert INSERT FIRST
+```
+

@@ -27,3 +27,26 @@ Rossz eszközválasztás (pl. UPDATE helyett SELECT).
 
 ## ELLENŐRZÉS (10 mp)
 Mondd ki hangosan: olvasok / írok / struktúrát építek?
+
+## KERESÉS, HA ELAKADTAM
+
+> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+
+Bemásolható keresők (5–10 mp):
+
+```text
+site:docs.oracle.com Oracle 11g SQL statement types SELECT INSERT UPDATE DDL syntax
+```
+
+```text
+site:stackoverflow.com Oracle 11g SQL statement types SELECT INSERT UPDATE DDL -mysql -postgresql -sql-server
+```
+
+```text
+Oracle Database 11g R2 SQL Language Reference SQL statement types SELECT INSERT UPDATE DDL
+```
+
+```text
+"Oracle 11g" SQL statement types SELECT INSERT UPDATE DDL ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
+```
+
