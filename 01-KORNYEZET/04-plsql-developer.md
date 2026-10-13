@@ -25,6 +25,6 @@ SELECT user FROM dual;
 
 - [ ] Csatlakozás sikerül  
 - [ ] `user_tables` listázható  
-- [ ] Saját séma / jogosultság rendben (lásd `00-20-PERCES-ZH/03-SEMA-USER.md`)
+- [ ] Saját séma / jogosultság rendben (lásd `00-20-PERCES-ZH/01-SEMA-USER/README.md`)
 
 > **Tanulási példa – ne másold be ZH-megoldásként.** A mintákban `<helyőrző>` van; töltsd ki a feladat szerint.

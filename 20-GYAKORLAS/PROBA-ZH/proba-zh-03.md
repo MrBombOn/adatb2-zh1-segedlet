@@ -12,6 +12,6 @@
 5. ORA hibák: szándékosan rontott FK → olvasd a kódot, javítsd.
 
 ## Beadás előtt
-Lásd [`00-20-PERCES-ZH/16-VEGSO-ELLENORZES.md`](../../00-20-PERCES-ZH/16-VEGSO-ELLENORZES.md).
+Lásd [`00-20-PERCES-ZH/00-START/FELADATONKENTI-MUNKAMENET.md`](../../00-20-PERCES-ZH/00-START/FELADATONKENTI-MUNKAMENET.md).
 
 Tanulási megoldásváz: [`../MEGOLDASOK/proba-zh-03-megoldas.md`](../MEGOLDASOK/proba-zh-03-megoldas.md)

@@ -1,61 +1,10 @@
-# Tábla létrehozás
+# Tábla létrehozás — ÁTKÖLTÖZÖTT
 
-**20 perc · GYORS réteg** · Részletes: [`10-DDL/create-table.md`](../10-DDL/create-table.md)
+> Ez a fájl **redirect stub**. A tartalom átköltözött ide:
 
-## Magyar szinonimák (feladatszöveg)
-hozz létre táblát / oszlopok / adattípusok / kötelező mező
+**→ [`02-TABLA-LETREHOZAS/README.md`](02-TABLA-LETREHOZAS/README.md)**
 
-## MI KELL? (1 mondat)
-CREATE TABLE + típusok + (gyakran) constraint-ek.
+Régi flat quick-ref név: `04-TABLA-LETREHOZAS.md`  
+Új feladatszöveg-alapú navigáció: [`00-START/README.md`](00-START/README.md)
 
-## Kitöltendő szintaktikai minta
-> **Tanulási példa – ne másold be ZH-megoldásként.** A mintákban `<helyőrző>` van; töltsd ki a feladat szerint.
-
-```sql
-CREATE TABLE <tabla> (
-  <id_oszlop>   NUMBER       NOT NULL,
-  <nev_oszlop>  VARCHAR2(<n>) NOT NULL,
-  <datum_oszlop> DATE,
-  <szulo_id>    NUMBER,
-  CONSTRAINT <pk_nev> PRIMARY KEY (<id_oszlop>)
-);
-```
-
-## TIPIKUS HIBA
-Fenntartott szó névként; hiányzó vessző; 12c IDENTITY használata (TILOS itt).
-
-## ELLENŐRZÉS (10 mp)
-DESC / lekérdezés `user_tables`-ből; próbáld az INSERT-et.
-
-## 11g ID
-```sql
-CREATE SEQUENCE <seq_nev> START WITH 1 INCREMENT BY 1;
--- INSERT-nél: <seq_nev>.NEXTVAL
-```
-
-## KERESÉS, HA ELAKADTAM
-
-> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
-
-Bemásolható keresők (5–10 mp):
-
-```text
-site:docs.oracle.com Oracle 11g CREATE TABLE SEQUENCE syntax
-```
-
-```text
-site:stackoverflow.com Oracle 11g CREATE TABLE SEQUENCE -mysql -postgresql -sql-server
-```
-
-```text
-Oracle Database 11g R2 SQL Language Reference CREATE TABLE SEQUENCE
-```
-
-```text
-"Oracle 11g" CREATE TABLE SEQUENCE ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
-```
-
-```text
-site:docs.oracle.com Oracle 11g CREATE TABLE syntax VARCHAR2 NUMBER DATE
-```
-
+Ne használd ezt a stubot tanulásra — nyisd az új mappát.

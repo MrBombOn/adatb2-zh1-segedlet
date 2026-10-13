@@ -17,7 +17,7 @@ SELECT * FROM dual;
 SELECT banner FROM v$version;  -- jogtól függhet
 ```
 
-Séma: `07-gyakorlo-schema.md`. Jogok: `00-20-PERCES-ZH/03-SEMA-USER.md`.
+Séma: `07-gyakorlo-schema.md`. Jogok: `00-20-PERCES-ZH/01-SEMA-USER/README.md`.
 
 ## Gyakori buktató
 

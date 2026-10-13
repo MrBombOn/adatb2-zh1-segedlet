@@ -1,36 +1,10 @@
-# Végső ellenőrzés (beadás előtt)
+# Végső ellenőrzés — ÁTKÖLTÖZÖTT
 
-- [ ] Oracle **11g** szintaxis: nincs LIMIT / FETCH FIRST / IDENTITY  
-- [ ] Minden `<helyőrző>` ki van töltve a **feladat neveivel**  
-- [ ] Függőségi sorrend: user → szülő → gyerek → adat → SELECT  
-- [ ] FK INSERT: szülő sor létezik  
-- [ ] GROUP BY teljes  
-- [ ] NULL: IS NULL / NVL ahol kell  
-- [ ] Dátum: TO_DATE maszk  
-- [ ] Top-N: ROWNUM alkérdéses mintában  
-- [ ] LEFT JOIN „nincs pár” ágnál IS NULL  
-- [ ] COMMIT csak ha kell  
-- [ ] Elolvastad az ORA üzenetet, ha volt hiba
+> Ez a fájl **redirect stub**. A tartalom átköltözött ide:
 
-## KERESÉS, HA ELAKADTAM
+**→ [`00-START/FELADATONKENTI-MUNKAMENET.md`](00-START/FELADATONKENTI-MUNKAMENET.md)**
 
-> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
+Régi flat quick-ref név: `16-VEGSO-ELLENORZES.md`  
+Új feladatszöveg-alapú navigáció: [`00-START/README.md`](00-START/README.md)
 
-Bemásolható keresők (5–10 mp):
-
-```text
-site:docs.oracle.com Oracle 11g SQL checklist COMMIT ROLLBACK GROUP BY syntax
-```
-
-```text
-site:stackoverflow.com Oracle 11g SQL checklist COMMIT ROLLBACK GROUP BY -mysql -postgresql -sql-server
-```
-
-```text
-Oracle Database 11g R2 SQL Language Reference SQL checklist COMMIT ROLLBACK GROUP BY
-```
-
-```text
-"Oracle 11g" SQL checklist COMMIT ROLLBACK GROUP BY ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
-```
-
+Ne használd ezt a stubot tanulásra — nyisd az új mappát.

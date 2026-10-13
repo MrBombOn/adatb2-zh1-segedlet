@@ -1,61 +1,10 @@
-# JOIN – pár nélkül is + gondolkodási lánc
+# JOIN — ÁTKÖLTÖZÖTT
 
-**20 perc · GYORS** · Részletes: [`07-JOIN/`](../07-JOIN/)
+> Ez a fájl **redirect stub**. A tartalom átköltözött ide:
 
-## Szinonimák
-akkor is ha nincs / minden X / hiányzó kapcsolat / nincs neki Y
+**→ [`08-JOIN-ES-KAPCSOLAT/README.md`](08-JOIN-ES-KAPCSOLAT/README.md)**
 
-## LEFT JOIN
-> **Tanulási példa – ne másold be ZH-megoldásként.** A mintákban `<helyőrző>` van; töltsd ki a feladat szerint.
+Régi flat quick-ref név: `12-JOIN-PAR-NELKUL-IS.md`  
+Új feladatszöveg-alapú navigáció: [`00-START/README.md`](00-START/README.md)
 
-```sql
-SELECT <b>.<oszlopok>, <j>.<oszlopok>
-FROM   <bal>  <b>
-LEFT JOIN <jobb> <j> ON <j>.<fk> = <b>.<pk>
-WHERE  <j>.<pk> IS NULL;   -- csak akiknek NINCS párjuk
-```
-
-## Kombinált gondolkodási lánc (AUTHOR / BOOK / LOAN)
-
-```text
-Mit kérnek?
-  könyvek szerzővel?     → book JOIN author
-  szerző könyv nélkül?   → author LEFT JOIN book WHERE book_id IS NULL
-  nyitott kölcsön?       → loan WHERE returned_on IS NULL
-  ki nem kölcsönzött?    → book LEFT JOIN nyitott_loan WHERE loan_id IS NULL
-```
-
-Ugyanez STUDENT/COURSE/ENROLLMENT-re:
-
-```text
-hallgató kurzusai → student JOIN enrollment JOIN course
-nincs jelentkezés → student LEFT JOIN enrollment WHERE enrollment.student_id IS NULL
-kurzusonként létszám → GROUP BY + COUNT
-```
-
-## KERESÉS, HA ELAKADTAM
-
-> **Figyelem:** Kerüld a MySQL / Postgres / SQL Server találatokat és a **12c+** megoldásokat (`FETCH FIRST`, `OFFSET … ROWS`, `IDENTITY`). Elsőbbség: hivatalos **Oracle 11g** dokumentáció.
-
-Bemásolható keresők (5–10 mp):
-
-```text
-site:docs.oracle.com Oracle 11g LEFT OUTER JOIN IS NULL anti-join syntax
-```
-
-```text
-site:stackoverflow.com Oracle 11g LEFT OUTER JOIN IS NULL anti-join -mysql -postgresql -sql-server
-```
-
-```text
-Oracle Database 11g R2 SQL Language Reference LEFT OUTER JOIN IS NULL anti-join
-```
-
-```text
-"Oracle 11g" LEFT OUTER JOIN IS NULL anti-join ROWNUM OR "INSERT ALL" OR MERGE -"FETCH FIRST" -mysql
-```
-
-```text
-site:docs.oracle.com Oracle 11g outer joins
-```
-
+Ne használd ezt a stubot tanulásra — nyisd az új mappát.

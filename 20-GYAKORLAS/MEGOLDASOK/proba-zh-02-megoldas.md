@@ -2,7 +2,7 @@
 
 > **TANULÁSI MEGOLDÁS – ZH alatt ne másold be.** Gyakorláshoz van; a ZH-n saját fejjel dolgozz.
 
-Használj placeholder mintákat a `00-20-PERCES-ZH/99-MASTER-CHEATSHEET.md` és a megfelelő gyorslapokból.
+Használj placeholder mintákat a `00-20-PERCES-ZH/99-MASTER/README.md` és a megfelelő gyorslapokból.
 A pontos tábla-/oszlopneveket **te** választod a gyakorló világból.
 
 ## Vázlatos irány
