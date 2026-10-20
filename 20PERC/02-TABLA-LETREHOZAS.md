@@ -1,0 +1,17 @@
+# Tábla létrehozás
+
+**P0** · SEQUENCE nem IDENTITY
+
+```sql
+CREATE TABLE <tabla> (
+  <id>    NUMBER NOT NULL,
+  <nev>   VARCHAR2(<n>) NOT NULL,
+  <datum> DATE,
+  CONSTRAINT <pk> PRIMARY KEY (<id>)
+);
+CREATE SEQUENCE <seq> START WITH 1 INCREMENT BY 1;
+```
+
+Adattípus: szám→NUMBER, szöveg→VARCHAR2(n), dátum→DATE.
+
+**RÉSZLETESEN:** [`../00-20-PERCES-ZH/02-TABLA-LETREHOZAS/README.md`](../00-20-PERCES-ZH/02-TABLA-LETREHOZAS/README.md)

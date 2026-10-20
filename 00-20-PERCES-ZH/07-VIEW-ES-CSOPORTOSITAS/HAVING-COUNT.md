@@ -1,10 +1,10 @@
-﻿# HAVING COUNT — önálló quick
+# HAVING COUNT — önálló quick
 
 **P0** · 11g
 
 ## 5 MÁSODPERCES FELISMERÉS
 
-„Legalább / pontosan / több mint N a **csoportban**” → HAVING COUNT.
+„Legalább / pontosan / több mint / kevesebb mint / legfeljebb N a **csoportban**” → HAVING COUNT + **helyes operátor**.
 
 ## Teljes SQL
 
@@ -12,10 +12,20 @@
 SELECT <c>, COUNT(*) AS db
 FROM   <t>
 GROUP BY <c>
-HAVING COUNT(*) >= <n>;
+HAVING COUNT(*) <operator> <n>;
 ```
 
-LEFT „nulla gyerek”: `COUNT(<jobb>.<pk>) = 0` — lásd JOIN 3 perc.
+## Operátor tábla
+
+| Szöveg | Operátor |
+|--------|----------|
+| kevesebb mint | `<` |
+| legfeljebb | `<=` |
+| pontosan | `=` |
+| legalább | `>=` |
+| több mint | `>` |
+
+LEFT „nulla gyerek”: `COUNT(<jobb>.<pk>) = 0` — lásd JOIN 3 perc. **Ne** `COUNT(*)`.
 
 ## Placeholder — MIT ÍRJ / HONNAN VESZEM
 
@@ -23,6 +33,6 @@ LEFT „nulla gyerek”: `COUNT(<jobb>.<pk>) = 0` — lásd JOIN 3 perc.
 |----------|---------|---------------|
 | `<c>` | Csoportkulcs | **feladat** |
 | `<n>` | Küszöb | **feladat** |
-| `>= > = <` | Összehasonlító | **feladat** |
+| `<operator>` | `<` `<=` `=` `>=` `>` | **feladat** — ne fix `>=` |
 
 Canonical: [`README.md`](README.md)

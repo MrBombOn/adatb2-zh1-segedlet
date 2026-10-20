@@ -1,0 +1,19 @@
+# CTAS / MERGE / szétválogatás
+
+**P0**
+
+```sql
+CREATE TABLE <uj> AS SELECT * FROM <forras> WHERE 1 = 0;
+
+MERGE INTO <cel> c
+USING (SELECT <k>, <d> FROM dual) s
+ON (c.<k> = s.<k>)
+WHEN NOT MATCHED THEN INSERT (<k>, <d>) VALUES (s.<k>, s.<d>);
+
+INSERT FIRST
+  WHEN <f1> THEN INTO <t1> VALUES (...)
+  ELSE INTO <t2> VALUES (...)
+SELECT ... FROM <forras>;
+```
+
+**RÉSZLETESEN:** [`../00-20-PERCES-ZH/05-MASOLAT-ES-MERGE/README.md`](../00-20-PERCES-ZH/05-MASOLAT-ES-MERGE/README.md) · [`../00-20-PERCES-ZH/06-SZETVALOGATAS/README.md`](../00-20-PERCES-ZH/06-SZETVALOGATAS/README.md)
