@@ -128,6 +128,36 @@ Ctrl+F a magyar megfogalmazásra → mappa. Oracle 11g. Nincs kész megoldásban
 | 122 | 3 szint: gyors/közepes/részletes | rétegek | `README` | P0 |
 | 123 | P0 max 2 katt README-ből | 00-START térkép | `00` | P0 |
 
+
+| 151 | ha a user már létezik / töröld a usert | DROP USER CASCADE | `01-SEMA-USER/DROP-USER` | P0 |
+| 152 | legalább N karakter / LENGTH | CHECK LENGTH | `03-CONSTRAINT/CHECK-LENGTH` | P0 |
+| 153 | több különböző táblába egyszerre | INSERT ALL multi-table | `04/INSERT-ALL-TOBB-TABLABA` | P0 |
+| 154 | mai nap idő nélkül / napra vágás | TRUNC(SYSDATE) | `11/DATUM-IDOPONT-NELKUL` | P0 |
+| 155 | N%-kal emeld / csökkentsd | százalékos UPDATE | `12/SZAZALEKOS-MODOSITAS` | P0 |
+| 156 | akiknek van kapcsolódó / ha létezik gyerek | UPDATE EXISTS | `12/UPDATE-HA-VAN…` | P0 |
+| 157 | analitikus / ablak / OVER | window functions | `18-ANALITIKUS` | P1 |
+| 158 | partíciónként összeg / rang | SUM/ROW_NUMBER OVER | `18` | P1 |
+| 159 | COUNT jobb oldal = 0 / 0 darab gyerek | LEFT + COUNT(pk)=0 | `08/LEFT-JOIN-COUNT-NULL` | P0 |
+| 160 | kis-nagy betű mindegy LIKE | UPPER/LOWER LIKE | `10/LIKE-CASE-INSENSITIVE` | P0 |
+| 161 | 5 részes lekérdezés | LEFT+COUNT+GROUP+LIKE+HAVING | `00-START/OT-KOMPONENSES…` | P0 |
+| 162 | komponensekre bontás | döntési út | `00-START/FELADAT-KOMPONENSEKRE…` | P0 |
+| 163 | lépésről lépésre döntés | §19 fa | `00-START/00-LEPESROL-LEPESRE` | P0 |
+| 164 | 3 perces gyorsút | §20 | `00-START/00-ZH-GYORS-3-PERC` | P0 |
+| 165 | pót ZH minták | mintafelismerés | `23/01-pot-zh…` | P0 |
+| 166 | közös eredeti+pót | változatmátrix | `23/02-KOZOS…` | P1 |
+| 167 | zero-knowledge önellenőrzés | ZK tesztek | `00-START/ZERO-KNOWLEDGE-TESZTEK` | P1 |
+
+
+| 168 | azokat is, amelyekhez még nem tartozik semmi | LEFT JOIN | `08-JOIN-ES-KAPCSOLAT` | P0 |
+| 169 | minden rekord, függetlenül a kapcsolattól | LEFT JOIN | `08` | P0 |
+| 170 | akkor is mutasd, ha nulla kapcsolódó rekordja van | LEFT JOIN (+ COUNT/IS NULL) | `08/LEFT-JOIN-COUNT-NULL` | P0 |
+| 171 | kapcsolódó rekord hiányában is | LEFT JOIN | `08` | P0 |
+| 172 | azokat is amelyekhez meg nem tartozik semmi (ék. nélkül) | LEFT JOIN | `08` | P0 |
+| 173 | fuggetlenul a kapcsolattol (ék. nélkül) | LEFT JOIN | `08` | P0 |
+| 174 | ZH-SZOVEG-FELISMERES-INDEX (nagy) | felismerő | `00-START/ZH-SZOVEG-FELISMERES-INDEX` | P0 |
+| 175 | nem tudom mit keressek | UX fallback | `00-START/NEM-TUDOM-MIT-KERESSEK` | P0 |
+| 176 | ismeretlen feladat 12 kérdés | UX fallback | `00-START/ISMERETLEN-FELADAT-FALLBACK` | P0 |
+
 ## Hogyan használd
 
 1. Ctrl+F egy magyar szóra a feladatszövegből.
@@ -148,3 +178,4 @@ Ez index, nem megoldás. A sorok szándékosan redundánsak a szinonimák miatt.
 
 További szinonimák: „add meg”, „készíts”, „állíts elő”, „számold meg”, „rendezd”.
 Mindig a feladatsor saját tábla-/oszlopneveit írd a helyőrzőkbe.
+

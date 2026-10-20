@@ -1,0 +1,4 @@
+﻿# 3 perc — DÁTUM
+1. TRUNC(SYSDATE) ([DATUM-IDOPONT-NELKUL.md](DATUM-IDOPONT-NELKUL.md))
+2. TO_DATE maszk ([README.md](README.md))
+3. Ne SYSDATE = date_col idővel

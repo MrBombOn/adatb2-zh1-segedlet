@@ -1,4 +1,4 @@
-# Course coverage (repo audit)
+﻿# Course coverage (repo audit)
 
 > **Korlát:** Ehhez a géphez nem lett feltöltve külön tananyag PDF/slide. Ez a fájl a **repo meglévő fejezeteit** auditálja — nem talál ki kurzustémát.
 
@@ -38,3 +38,8 @@
 ## Nem állított kurzusállítások
 
 Nincs külső syllabus → nem állítjuk, hogy a félévben „pont ezek” a kötelezők; a P0/P1 a **ZH1 segédlet** belső prioritása.
+
+## Retake / két ZH (V2)
+
+Részletes tengelyek: [COVERAGE-REPORT.md](COVERAGE-REPORT.md).  
+Új pót-minták a GYORS fában additívan (DROP USER, LENGTH, multi INSERT, TRUNC, %/EXISTS UPDATE, analytics, COUNT=0, UPPER LIKE, 5 komponens).
